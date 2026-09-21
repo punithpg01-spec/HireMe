@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HireMe — AI Interview Platform</title>
+    <meta
+      name="description"
+      content="Practice interviews with AI. Get real-time feedback, structured scores, and the confidence to walk into any interview prepared."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <span class="orb orb-a"></span>
+      <span class="orb orb-b"></span>
+      <span class="orb orb-c"></span>
+      <span class="grid-glow"></span>
+    </div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#top" aria-label="HireMe home">
+          <span class="logo-mark" aria-hidden="true">HM</span>
+          HireMe
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul class="nav-list">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#roles">Roles</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+          <a class="btn btn-primary header-cta" href="#get-started">Start free</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero-layout">
+          <div class="hero-copy-wrap">
+            <p class="eyebrow">AI interview practice</p>
+            <h1>Walk into every interview already prepared.</h1>
+            <p class="hero-copy">
+              HireMe runs realistic, role-specific interviews with an AI interviewer,
+              then scores your answers on clarity, depth, and structure — so you
+              know exactly what to improve before the real conversation.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#get-started">Start a mock interview</a>
+              <a class="btn btn-ghost" href="#how-it-works">See how it works</a>
+            </div>
+            <p class="hero-note">No credit card. 15-minute practice sessions.</p>
+          </div>
+
+          <aside class="hero-stage" aria-hidden="true">
+            <div class="stage-card">
+              <div class="stage-top">
+                <span class="live-pill">
+                  <span class="live-dot"></span>
+                  Live session
+                </span>
+                <span class="stage-role">Software Engineer · Mid</span>
+              </div>
+              <p class="stage-label">AI interviewer</p>
+              <p class="stage-question" id="stage-question">Tell me about a time you shipped under pressure.</p>
+              <div class="wave" id="wave"></div>
+              <p class="stage-label">Live scoring</p>
+              <ul class="meters">
+                <li>
+                  <span>Clarity</span>
+                  <div class="meter-track"><span class="meter-fill" data-score="86"></span></div>
+                  <strong class="meter-value" data-target="86">0</strong>
+                </li>
+                <li>
+                  <span>Structure</span>
+                  <div class="meter-track"><span class="meter-fill" data-score="74"></span></div>
+                  <strong class="meter-value" data-target="74">0</strong>
+                </li>
+                <li>
+                  <span>Depth</span>
+                  <div class="meter-track"><span class="meter-fill" data-score="91"></span></div>
+                  <strong class="meter-value" data-target="91">0</strong>
+                </li>
+              </ul>
+            </div>
+            <div class="float-chip chip-a">Follow-up in 2s</div>
+            <div class="float-chip chip-b">STAR detected</div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <header class="section-header">
+            <h2>Built for serious preparation</h2>
+            <p>
+              Everything you need to rehearse, measure, and improve — without
+              waiting for a human interviewer.
+            </p>
+          </header>
+          <div class="card-grid">
+            <article class="card">
+              <span class="card-icon" aria-hidden="true"></span>
+              <h3>Role-aware questions</h3>
+              <p>
+                Practice for product, engineering, data, and customer-facing
+                roles with questions that match the job, not a generic quiz.
+              </p>
+            </article>
+            <article class="card">
+              <span class="card-icon pulse-icon" aria-hidden="true"></span>
+              <h3>Live feedback</h3>
+              <p>
+                Get notes on rambling, missing examples, and weak structure
+                right after each answer — while the interview is still fresh.
+              </p>
+            </article>
+            <article class="card">
+              <span class="card-icon score-icon" aria-hidden="true"></span>
+              <h3>Score you can track</h3>
+              <p>
+                See progress across communication, technical depth, and
+                problem-solving so you know when you are ready to apply.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="how-it-works">
+        <div class="container">
+          <header class="section-header">
+            <h2>How a session works</h2>
+            <p>Three steps from “I should practice” to a scored interview.</p>
+          </header>
+          <ol class="steps">
+            <li>
+              <h3>Choose the role</h3>
+              <p>Pick the job type, seniority, and how tough you want the interviewer to be.</p>
+            </li>
+            <li>
+              <h3>Answer out loud</h3>
+              <p>Speak naturally. HireMe follows up like a real interviewer, not a form.</p>
+            </li>
+            <li>
+              <h3>Review the scorecard</h3>
+              <p>Read what landed, what was missing, and the exact phrasing to try next time.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="roles">
+        <div class="container">
+          <header class="section-header">
+            <h2>Practice the interview you will actually take</h2>
+            <p>Start with a track, then customize the job description.</p>
+          </header>
+          <ul class="role-list">
+            <li>Software engineering</li>
+            <li>Product management</li>
+            <li>Data science</li>
+            <li>Sales &amp; customer success</li>
+            <li>Design</li>
+            <li>General behavioral</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="pricing">
+        <div class="container">
+          <header class="section-header">
+            <h2>Simple pricing</h2>
+            <p>Start free. Upgrade when you want unlimited practice.</p>
+          </header>
+          <div class="pricing-grid">
+            <article class="price-card">
+              <h3>Starter</h3>
+              <p class="price">Free</p>
+              <p>3 interviews a month, one role track, basic scorecard.</p>
+              <a class="btn btn-ghost" href="#get-started">Create account</a>
+            </article>
+            <article class="price-card price-card-featured">
+              <h3>Pro</h3>
+              <p class="price">$19<span>/month</span></p>
+              <p>Unlimited sessions, all roles, follow-up coaching, and progress history.</p>
+              <a class="btn btn-primary" href="#get-started">Start Pro trial</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band" id="get-started">
+        <div class="container cta-inner">
+          <h2>Ready for a better interview?</h2>
+          <p>
+            Join candidates who practice with HireMe before they talk to a hiring
+            manager. Your first session takes about 15 minutes.
+          </p>
+          <form class="signup-form" id="signup-form" novalidate>
+            <label class="sr-only" for="email">Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@company.com"
+              autocomplete="email"
+              required
+            />
+            <button class="btn btn-primary" type="submit">Get started</button>
+            <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2026 HireMe. Practice interviews with AI.</p>
+        <p>
+          <a href="#features">Features</a>
+          ·
+          <a href="#pricing">Pricing</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
